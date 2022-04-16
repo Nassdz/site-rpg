@@ -48,3 +48,21 @@ class Overworld {
   }
  
  }
+//placement d'objets
+init() {
+  const warrior_m = new GameObject({
+    x : 1, //exemple
+    y : 1, //exemple
+  })
+  const item1 = new GameObject({
+    x : 4,
+    y : 5,
+    src :"" //image de l'item en question
+  })
+  setTimeout(() => {
+    warrior_m.sprite.draw(this.ctx);
+    item1.sprite.draw(this.ctx);
+  },200)
+}
+
+  
