@@ -48,3 +48,21 @@ class Overworld {
   }
  
  }
+init() {
+   const warrior_m = new GameObject({
+     x: 5,//exemple
+     y: 6,//exemple
+   })
+   const item1 = new GameObject({
+    x: 7,//exemple
+    y: 9,//exemple
+    src:"" // image de l'iteme en question
+  })
+
+  setTimeout(() => {
+    warrior_m.sprite.draw(this.ctx);
+    item1.sprite.draw(this.ctx);
+  }, 200)
+
+  
+ }
